@@ -455,7 +455,6 @@
           <pre><code class="language-javascript">elasticlunr.Index.prototype.removeDocByRef = function (docRef, emitEvent) {
   if (!docRef) return;
   if (this.documentStore.isDocStored() === false) {
-    elasticlunr.utils.warn('remove doc by ref is not allowed, because currectly not storing documents in DocumentStore');
     return;
   }
 
